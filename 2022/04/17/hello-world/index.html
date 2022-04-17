@@ -321,11 +321,10 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"U2G9JHVRMLQdTND6WiukvLjl-MdYXbMMI","appKey":"qyDDSxL8diyePk3dNAGRNhUp","path":"window.location.pathname","placeholder":"Just go go","avatar":"retro","meta":["nick","mail"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"u2g9jhvr.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"appId":"U2G9JHVRMLQdTND6WiukvLjl-MdYXbMMI","appKey":"qyDDSxL8diyePk3dNAGRNhUp","path":"window.location.pathname","placeholder":"Just go go","avatar":"retro","meta":["nick","mail"],"requiredFields":["nick","mail"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://u2g9jhvr.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
           {
             el: "#valine",
-            path: window.location.pathname,
-            serverURLs: 'u2g9jhvr.api.lncldglobal.com'
+            path: window.location.pathname
           }
         )
         new Valine(options);
